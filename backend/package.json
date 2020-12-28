@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon",
+    "start": "node index"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "moment": "^2.24.0",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "socket.io": "^2.3.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

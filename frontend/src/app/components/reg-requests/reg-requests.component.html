@@ -1,0 +1,28 @@
+<h2 class="page-header">Zahtjevi za registraciju:</h2>
+<div *ngIf ="user?.length != 0">
+    <table class="table">
+    <thead>
+            <th scope="col">Ime</th>
+            <th scope="col">Prezime</th>
+            <th scope="col">Korisnicko ime</th>
+            <th scope="col">Zanimanje</th>
+            <th scope="col">Email</th>
+            <th scope="col">JMBG</th>
+            <th scope="col">Tip</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let stavka of user">
+        <td>{{stavka.name}}</td>
+        <td>{{stavka.surname}}</td>
+        <td>{{stavka.username}}</td>
+        <td>{{stavka.occupation}}</td>
+        <td>{{stavka.email}}</td>
+        <td>{{stavka.JMBG}}</td>
+        <td>{{stavka.type}}</td>
+        <td><button (click)="approveRequest(stavka)">Dozvoli</button> <hr></td>
+        <td><button (click)="denyRequest(stavka)">Zabrani</button> <hr></td>  
+    </tr>
+    </tbody>
+    </table>
+</div>
+<div *ngIf ="user?.length == 0">Nema novih zahtjeva</div>

@@ -1,0 +1,42 @@
+<h2>Moj broj</h2>
+<div *ngIf ="!odigrano">
+<a *ngIf = "!started" class="btn btn-secondary" (click)="pocni()">Pocni igru Moj broj</a><br>
+<label>Vrijeme: {{time}}</label><br>
+<div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                Potreban broj: {{result}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {{broj1}}
+            </div>
+            <div class="col">
+                {{broj2}}
+            </div>
+            <div class="col">
+                {{broj3}}
+            </div>
+            <div class="col">
+                {{broj4}}
+            </div>
+            <div class="col">
+                {{broj5}}
+            </div>
+            <div class="col">
+                {{broj6}}
+            </div>
+    </div>
+</div>
+<form *ngIf = "showIzraz" (submit) = "gotovo()">
+        <div class="form-group">
+          <label>Rjesenje: </label>
+          <input type="text" [(ngModel)]="izraz" name="izraz" class="form-control">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit">
+</form>
+<a *ngIf = "started && slot<8" class="btn btn-secondary" (click)="stop()">STOP</a><br>
+</div>
+<label>{{message}}</label><br>
+<a class="btn btn-primary" [routerLink]="['../igradana']">Igre dana</a>

@@ -1,0 +1,20 @@
+<h2>Anagram</h2>
+
+<div *ngIf = "!odigrano">
+<a class="btn btn-secondary" (click)="startAnagram()">Pocni anagram</a><br>
+
+<label>Vrijeme: {{time}}</label><br>
+<label>Anagram:<br>{{postavka}}</label><br>
+
+<form (submit) = "sendRjesenje()">
+        <div class="form-group">
+          <label>Rjesenje: </label>
+          <input type="text" [(ngModel)]="rjesenje" name="rjesenje" class="form-control">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit">
+</form>
+</div><br>
+
+<label>{{message}}</label><br>
+
+<a class="btn btn-primary" [routerLink]="['../igradana']">Igre dana</a><br>

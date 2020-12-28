@@ -1,0 +1,562 @@
+
+Novas1fr@3 i Novas1fr@5 su sifre
+
+
+db.anagrami.insertMany([
+	{
+		postavka: "I dalje tvrdo, nedaće i hag",
+		rjesenje: "dvehiljadetreća godina"
+	},
+	{
+		postavka: "Blago zlima",
+		rjesenje: "globalizam"
+	},
+	{
+		postavka: "Umreše kao psi",
+		rjesenje: "pesma o keruši"
+	},
+	{
+		postavka: "Ura, bekrije",
+		rjesenje: "bure rakije"
+	},
+	{
+		postavka: "Brufen i po",
+		rjesenje: "ibuprofen"
+	}
+	
+	
+])
+
+db.geografija.insertMany([
+	{
+		naziv: "Tara",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Temisvar",
+		tip: "grad"
+	},
+	{
+		naziv: "Durmitor",
+		tip: "planina"
+	},
+	{
+		naziv: "Beograd",
+		tip: "grad"
+	},
+	{
+		naziv: "Lim",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Srbija",
+		tip: "drzava"
+	},
+	{
+		naziv: "Dunav",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Novi Sad",
+		tip: "grad"
+	},
+	{
+		naziv: "Lovcen",
+		tip: "planina"
+	},
+	{
+		naziv: "Smolensk",
+		tip: "grad"
+	},
+	{
+		naziv: "Volga",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Crna Gora",
+		tip: "drzava"
+	},
+	{
+		naziv: "Sava",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Segedin",
+		tip: "grad"
+	},
+	{
+		naziv: "Orjen",
+		tip: "planina"
+	},
+	{
+		naziv: "Sofija",
+		tip: "grad"
+	},
+	{
+		naziv: "Ibar",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Rusija",
+		tip: "drzava"
+	},
+	{
+		naziv: "Tisa",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Zrenjanin",
+		tip: "grad"
+	},
+	{
+		naziv: "Prokletije",
+		tip: "planina"
+	},
+	{
+		naziv: "Moskva",
+		tip: "grad"
+	},
+	{
+		naziv: "Temza",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Švedska",
+		tip: "drzava"
+	},
+	
+	{
+		naziv: "palma",
+		tip: "biljka"
+	},
+	{
+		naziv: "krava",
+		tip: "zivotinja"
+	},
+	{
+		naziv: "svinja",
+		tip: "zivotinja"
+	},
+	{
+		naziv: "oleander",
+		tip: "biljka"
+	},
+	{
+		naziv: "Sena",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Burgas",
+		tip: "grad"
+	},
+	{
+		naziv: "Rtanj",
+		tip: "planina"
+	},
+	{
+		naziv: "Atina",
+		tip: "grad"
+	},
+	{
+		naziv: "Dnjepar",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Njemacka",
+		tip: "drzava"
+	},
+	{
+		naziv: "Skadarsko",
+		tip: "jezera"
+	},
+	{
+		naziv: "Bajkalsko",
+		tip: "jezera"
+	},
+	{
+		naziv: "Srebrno",
+		tip: "jezera"
+	},
+	{
+		naziv: "Kijev",
+		tip: "grad"
+	},
+	{
+		naziv: "Kaspijsko",
+		tip: "jezera"
+	},
+	{
+		naziv: "Francuska",
+		tip: "drzava"
+	},
+	{
+		naziv: "cempres",
+		tip: "biljka"
+	},
+	{
+		naziv: "Sarajevo",
+		tip: "grad"
+	},
+	{
+		naziv: "ruza",
+		tip: "biljke"
+	},
+	{
+		naziv: "Berlin",
+		tip: "grad"
+	},
+	{
+		naziv: "London",
+		tip: "grad"
+	},
+	{
+		naziv: "Italija",
+		tip: "drzava"
+	},
+	{
+		naziv: "Ćehotina",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Šabac",
+		tip: "grad"
+	},
+	{
+		naziv: "Olimp",
+		tip: "planina"
+	},
+	{
+		naziv: "Rim",
+		tip: "grad"
+	},
+	{
+		naziv: "žalfija",
+		tip: "biljka"
+	},
+	{
+		naziv: "Norveška",
+		tip: "drzava"
+	},
+	
+	{
+		naziv: "iris",
+		tip: "biljka"
+	},
+	{
+		naziv: "kokoška",
+		tip: "zivotinja"
+	},
+	{
+		naziv: "lav",
+		tip: "zivotinja"
+	},
+	{
+		naziv: "lipa",
+		tip: "biljka"
+	},
+
+	{
+		naziv: "Iron Maiden",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Rammstein",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Bijelo dugme",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Sabaton",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Beogradski sindikat",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Psihoaktiv trip",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Kerber",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Dječaci",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Kiša metaka",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Arkona",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Hammerfall",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "EKV",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Vizant",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Istanbul",
+		tip: "grad"
+	},
+	{
+		naziv: "Madrid",
+		tip: "grad"
+	},
+	{
+		naziv: "Podgorica",
+		tip: "grad"
+	},
+	{
+		naziv: "Herceg Novi",
+		tip: "grad"
+	},
+	{
+		naziv: "Bar",
+		tip: "grad"
+	},
+	{
+		naziv: "Kotor",
+		tip: "grad"
+	},
+	{
+		naziv: "Vršac",
+		tip: "grad"
+	},
+	{
+		naziv: "konj",
+		tip: "životinja"
+	},
+	{
+		naziv: "Vranje",
+		tip: "grad"
+	},
+	{
+		naziv: "Leskovac",
+		tip: "grad"
+	},
+	{
+		naziv: "Leposavić",
+		tip: "grad"
+	},
+	
+	{
+		naziv: "Prizren",
+		tip: "grad"
+	},
+	{
+		naziv: "Banja Luka",
+		tip: "grad"
+	},
+	{
+		naziv: "Petrograd",
+		tip: "grad"
+	},
+	{
+		naziv: "Vladivostok",
+		tip: "grad"
+	},
+	{
+		naziv: "Peking",
+		tip: "grad"
+	},
+	{
+		naziv: "Sevilja",
+		tip: "grad"
+	},
+	{
+		naziv: "Venecija",
+		tip: "grad"
+	},
+	{
+		naziv: "Dubioza kolektiv",
+		tip: "mgrupa"
+	},
+	{
+		naziv: "Dnjestar",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Grčka",
+		tip: "drzava"
+	},
+	{
+		naziv: "Španija",
+		tip: "drzava"
+	},
+	{
+		naziv: "Ladoga",
+		tip: "jezera"
+	},
+	{
+		naziv: "Onjega",
+		tip: "jezera"
+	},
+	{
+		naziv: "Melburn",
+		tip: "grad"
+	},
+	{
+		naziv: "Barselona",
+		tip: "grad"
+	},
+	{
+		naziv: "Velika Britanija",
+		tip: "drzava"
+	},
+	{
+		naziv: "Irska",
+		tip: "drzava"
+	},
+	{
+		naziv: "Loznica",
+		tip: "grad"
+	},
+	{
+		naziv: "Niš",
+		tip: "grad"
+	},
+	{
+		naziv: "Priština",
+		tip: "grad"
+	},
+	{
+		naziv: "Ivanjica",
+		tip: "grad"
+	},
+	{
+		naziv: "Portugal",
+		tip: "drzava"
+	},
+	{
+		naziv: "Bojana",
+		tip: "rijeka"
+	},
+	{
+		naziv: "Bor",
+		tip: "biljka"
+	},
+	{
+		naziv: "Bor",
+		tip: "grad"
+	},
+	{
+		naziv: "Nikšić",
+		tip: "grad"
+	},
+	{
+		naziv: "Pljevlja",
+		tip: "grad"
+	},
+	{
+		naziv: "gazela",
+		tip: "zivotinja"
+	},
+	
+	{
+		naziv: "antilopa",
+		tip: "zivotinja"
+	},
+	{
+		naziv: "tigar",
+		tip: "zivotinja"
+	},
+	{
+		naziv: "slon",
+		tip: "zivotinja"
+	},
+	{
+		naziv: "hrast",
+		tip: "biljka"
+	}
+])
+
+db.users.insertMany([
+{
+		"name" : "Jovan",
+        "surname" : "Jovanovic",
+        "email" : "krivokapicijus@gmail.com",
+        "occupation" : "student",
+        "username" : "jocko",
+        "password" : "$2a$10$ZlmZ3Ey880DqLrFR/0g4/unLE4DIrvYohZfhxO89u5RMorieqjZmC",
+        "gender" : "male",
+        "JMBG" : 12354546,
+        "secretQ" : "asd",
+        "secretA" : "asd",
+        "type" : "supervisor",
+        "request" : false,
+        "approved" : true
+},
+{
+        "name" : "Jovan",
+        "surname" : "Krivokapic",
+        "email" : "stefank37@hotmail.com",
+        "occupation" : "student",
+        "username" : "jkrivi",
+        "password" : "$2a$10$KgxJZIvPjLdJxUr8y5hF1OfgD7AkjbP1QDX9DTjcIAYwwUQOLSEjy",
+        "gender" : "male",
+        "JMBG" : 12354546,
+        "secretQ" : "asd",
+        "secretA" : "asd",
+        "type" : "user",
+        "request" : false,
+        "approved" : true,
+},
+{
+        "name" : "Stefan",
+        "surname" : "Krivokapic",
+        "email" : "abvg@gmail.com",
+        "occupation" : "student",
+        "username" : "krivi",
+        "password" : "$2a$10$ZlmZ3Ey880DqLrFR/0g4/unLE4DIrvYohZfhxO89u5RMorieqjZmC",
+        "gender" : "male",
+        "JMBG" : 1232131244,
+        "secretQ" : "pitanje",
+        "secretA" : "odgovor",
+        "type" : "admin",
+        "request" : false,
+},
+{
+        "name" : "Milorad",
+        "surname" : "Miloradovic",
+        "email" : "abvg@gmail.com",
+        "occupation" : "student",
+        "username" : "milo",
+        "password" : "$2a$10$ZlmZ3Ey880DqLrFR/0g4/unLE4DIrvYohZfhxO89u5RMorieqjZmC",
+        "gender" : "male",
+        "JMBG" : 1232131244,
+        "secretQ" : "pitanje",
+        "secretA" : "odgovor",
+        "type" : "user",
+        "request" : false,
+		"approved" : true,
+},
+{
+        "name" : "Zeljko",
+        "surname" : "Zeljkovic",
+        "email" : "abvg@gmail.com",
+        "occupation" : "student",
+        "username" : "krivi",
+        "password" : "$2a$10$ZlmZ3Ey880DqLrFR/0g4/unLE4DIrvYohZfhxO89u5RMorieqjZmC",
+        "gender" : "male",
+        "JMBG" : 1232131244,
+        "secretQ" : "pitanje",
+        "secretA" : "odgovor",
+        "type" : "user",
+        "request" : false,
+		"approved" : true,
+}
+
+])

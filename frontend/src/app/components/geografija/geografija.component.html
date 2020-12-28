@@ -1,0 +1,97 @@
+<h2>Zanimljiva geografija</h2>
+
+<label class="badge badge-warning">{{message}}</label>
+<div *ngIf = "!odigrano">
+<div *ngIf ="za_eval != undefined && gotovo == true">
+  <table class="table">
+  <thead>
+          <th scope="col">Kategorija</th>
+          <th scope="col">Naziv</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let stavka of za_eval.za_eval">
+      <td>{{stavka.kategorija}}</td>
+      <td *ngFor = "let item of stavka.pojmovi">
+        {{item}}
+      </td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
+<div *ngIf = "gotovo == false">
+<label *ngIf = "started">Traze se pojmovi na slovo: {{slovo}}</label><br>
+<label *ngIf = "started" class="badge badge-danger">Pojmove koji se sastoje od 2+ rijeci upisati sa navodnicima (" ")</label>
+<a *ngIf = "!started" class="btn btn-secondary" (click)="startGame()">Pocni igru Zanimljiva geografija</a><br>
+<label>Vrijeme: {{time}}</label>
+<label *ngIf = 'gotovo'>Vasi poeni: {{poeni}}</label>
+<div *ngIf = "started">
+<a *ngIf = "started" class="btn btn-secondary" (click)="stop()">Zaustavi i posalji unesene pojmove</a><br>
+<form (submit) = "send('drzave')">
+        <div class="form-group">
+          <label>Drzave: </label>
+          <input type="text" [(ngModel)]="drzave" name="drzave" class="form-control">
+        </div>
+        <input *ngIf = '!poslato[0]' type="submit" class="btn btn-primary" value="Submit">
+</form><br>
+
+<form (submit) = "send('gradovi')">
+        <div class="form-group">
+          <label>Gradovi: </label>
+          <input type="text" [(ngModel)]="gradovi" name="gradovi" class="form-control">
+        </div>
+        <input *ngIf = '!poslato[1]' type="submit" class="btn btn-primary" value="Submit">
+</form><br>
+
+<form (submit) = "send('jezera')">
+        <div class="form-group">
+          <label>Jezera: </label>
+          <input type="text" [(ngModel)]="jezera" name="jezera" class="form-control">
+        </div>
+        <input *ngIf = '!poslato[2]' type="submit" class="btn btn-primary" value="Submit">
+</form><br>
+
+<form (submit) = "send('planine')">
+        <div class="form-group">
+          <label>Planine: </label>
+          <input type="text" [(ngModel)]="planine" name="planine" class="form-control">
+        </div>
+        <input *ngIf = '!poslato[3]' type="submit" class="btn btn-primary" value="Submit">
+</form><br>
+
+<form (submit) = "send('rijeke')">
+        <div class="form-group">
+          <label>Rijeke: </label>
+          <input type="text" [(ngModel)]="rijeke" name="rijeke" class="form-control">
+        </div>
+        <input *ngIf = '!poslato[4]' type="submit" class="btn btn-primary" value="Submit">
+</form><br>
+
+<form (submit) = "send('zivotinje')">
+        <div class="form-group">
+          <label>Zivotinje: </label>
+          <input type="text" [(ngModel)]="zivotinje" name="zivotinje" class="form-control">
+        </div>
+        <input *ngIf = '!poslato[5]' type="submit" class="btn btn-primary" value="Submit">
+</form><br>
+
+<form (submit) = "send('biljke')">
+        <div class="form-group">
+          <label>Biljke: </label>
+          <input type="text" [(ngModel)]="biljke" name="biljke" class="form-control">
+        </div>
+        <input *ngIf = '!poslato[6]' type="submit" class="btn btn-primary" value="Submit">
+</form><br>
+
+<form (submit) = "send('mgrupe')">
+        <div class="form-group">
+          <label>Muzicke grupe: </label>
+          <input type="text" [(ngModel)]="mgrupe" name="mgrupe" class="form-control">
+        </div>
+        <input *ngIf = '!poslato[7]' type="submit" class="btn btn-primary" value="Submit">
+</form><br>
+</div>
+</div>
+</div>
+<br>
+<a class="btn btn-primary" [routerLink]="['../igradana']">Igre dana</a>

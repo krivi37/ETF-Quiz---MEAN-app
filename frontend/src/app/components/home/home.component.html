@@ -1,0 +1,26 @@
+
+<div class="jumbotron text-center">
+    <h1>ETF Kviskoteka</h1>
+    <p class="lead">Dobrodosli u kviskoteku</p>
+    <div *ngIf = "!auth.loggedIn() && !reset">
+      <a class="btn btn-primary" [routerLink]="['/register']">Register</a>&nbsp; <a class="btn btn-primary" [routerLink]="['/login']">Login</a>&nbsp;
+      <a class="btn btn-primary" [routerLink]="['/igradana']">Nastavi kao gost</a><br>
+      <a class="btn btn-secondary" (click)="reset = true">Zaboravljena lozinka?</a>
+    </div>
+    <div *ngIf ="reset">
+        <form (submit) = "resetPassword()">
+            <div class="form-group">
+              <label>Korisnicko ime</label>
+              <input type="text" [(ngModel)]="username" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>JMBG</label>
+              <input type="text" [(ngModel)]="JMBG" name="password" class="form-control">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+        <a class="btn btn-secondary" (click)="reset = false">Nazad</a>
+    </div>
+  </div>
+
+  

@@ -1,0 +1,30 @@
+<h2>Konfigurisanje igre dana</h2>
+<a class="btn btn-secondary" (click)="dovuciAnagrame()">Pregledaj anagrame</a><br>
+
+<div *ngIf ="anagrami?.length != 0" (submit) = "odaberiAnagram()">
+<div class="form-group">
+        <table class="table">
+        <thead>
+                <th scope="col">Postavka</th>
+                <th scope="col">Rjesenje</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let stavka of anagrami">
+            <td>{{stavka.postavka}}</td>
+            <td>{{stavka.rjesenje}}</td>
+            <td><button (click)="odaberiAnagram(stavka)">Odaberi</button> <hr></td>  
+        </tr>
+        </tbody>
+        </table>
+</div>
+<div class="form-group">
+        <div class="input-group">
+            <input class="form-control" placeholder="yyyy-mm-dd"
+                name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+            <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+        </div>
+    </div>
+</div>
+</div>
+<a class="btn btn-secondary" [routerLink]="['../adminpage']">Nazad na administratorsku stranicu</a>

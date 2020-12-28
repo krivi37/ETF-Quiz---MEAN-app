@@ -1,0 +1,45 @@
+<div *ngIf = "authService.getUserType() != 'admin' && authService.getUserType() != 'supervisor' && igradana">
+    <h2>Odaberi igru</h2>
+    <a class="btn btn-primary" [routerLink]="['../anagram']">Anagram</a><br>
+    <a class="btn btn-primary" [routerLink]="['../mojbroj']">Moj broj</a><br>
+    <a class="btn btn-primary" [routerLink]="['../geografija']">Zanimljiva geografija</a><br>
+    <br>
+    <div *ngIf ="odigrane?.length!= 0">
+            <label>Vasi rezultati: </label>
+            <table class="table">
+            <thead>
+                    <th scope="col">Igra</th>
+                    <th scope="col">Poeni</th>
+            </thead>
+            <tbody>
+            <tr *ngFor="let stavka of odigrane">
+                <td>{{stavka.igra}}</td>
+                <td>{{stavka.poeni}}</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+</div><br>
+<label class="badge badge-warning">{{message}}</label><br>
+<a class="btn btn-secondary" (click)="dohvatiTakmicare()">Pregledaj rezultate svih igraca za danasnju igru</a><br>
+<div *ngIf ="takmicari?.length!= 0">
+        <label>Tabela najboljih rezultata za danasnju igru: </label>
+        <table class="table">
+        <thead>
+                <th scope="col">Korisnik</th>
+                <th scope="col">Anagram</th>
+                <th scope="col">Moj Broj</th>
+                <th scope="col">Geografija</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let stavka of takmicari">
+            <td>{{stavka.username}}</td>
+            <td>{{stavka.anagram}}</td>
+            <td>{{stavka.mojBroj}}</td>
+            <td>{{stavka.geografija}}</td>
+        </tr>
+        </tbody>
+        </table>
+</div><br>
+
+<a class="btn btn-primary" [routerLink]="['../home']">Nazad na pocetnu</a><br>
